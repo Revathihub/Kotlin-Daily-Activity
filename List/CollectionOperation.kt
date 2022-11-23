@@ -1,0 +1,30 @@
+package com.List
+fun main(){
+    var num1=mutableListOf(10,2,10,23,45)
+
+    println(num1.any{it%2==0})
+    println(num1.any{it<10})
+    println(num1.all{it<10})
+    println(num1.all{it%2==0})
+    println(num1.all{it>10})
+    println(num1.count{it<10})
+    println(num1.count{it%2==0})
+    println(num1.max())
+    println(num1.min())
+    println(num1.count())
+    println(num1.drop(2))
+    println(num1.drop(3))
+    println(num1.dropLast(2))
+    println(num1.dropWhile{it<10})
+    println("--------------------------------")
+
+    println(num1.filter{it%2==0})
+    println(num1.filterNot{it%2==0})
+println("--------------------------------")
+    println(num1.take(2))
+    println(num1.take(3))
+    println(num1.takeLast(3))
+    println(num1.takeWhile{it>2})
+    println(num1.takeWhile{it%2==0})
+    println(num1.takeLastWhile{it>2})
+}
